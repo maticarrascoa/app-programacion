@@ -6,6 +6,18 @@
 
 <ion-content class="ion-padding">
   <h2>Bienvenido {{username}}</h2>
- 
+  
+  <!-- Animación 1: Cuadro que se mueve y cambia de tamaño -->
+  <div class="animate-square" style="width: 100px; height: 100px; background-color: red; margin: 20px auto;"></div>
+  <ion-button expand="block" class="animate-button1">Ejecutar Animación 1</ion-button>
+
+  <!-- Animación 2: Rotación de un elemento -->
+  <div class="animate-rotate" style="width: 100px; height: 100px; background-color: green; margin: 20px auto;"></div>
+  <ion-button expand="block" class="animate-button2">Ejecutar Animación 2</ion-button>
+
+  <!-- Animación 3: Cambio de opacidad -->
+  <div class="animate-fade" style="width: 100px; height: 100px; background-color: blue; margin: 20px auto;"></div>
+  <ion-button expand="block" class="animate-button3">Ejecutar Animación 3</ion-button>
+
+  <ion-button expand="block" (click)="goToLogin()">Volver a Login</ion-button>
 </ion-content>
-<ion-button expand="block" (click)="goToLogin()">Volver a Login</ion-button>
